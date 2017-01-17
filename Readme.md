@@ -8,6 +8,10 @@ at the FH Aachen. Therefore some parts of this are in german. If you're
 interested in this and have trouble understanding it, do not hesitate to
 contact me: I'll gladly translate it for you to english.
 
+##License
+
+This program is lincesed under MIT. See License.md for details.
+
 ##Idee
 Dieses Programm versucht Haselnüsse visuell nach ihrem Geschmack zu
 klassifizieren, insbesondere die Erkennung der schlecht schmeckenden soll

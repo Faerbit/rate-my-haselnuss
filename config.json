@@ -1,0 +1,375 @@
+{
+	"detection" : 
+	[
+		{
+			"input" : "color",
+			"name" : "Verkleinern",
+			"operation" : "_resize",
+			"param1" : 
+			{
+				"default" : 512,
+				"lowerBound" : 1,
+				"name" : "Neue Seitenlänge",
+				"odd" : false,
+				"upperBound" : 10000
+			},
+			"param2" : 
+			{
+				"default" : 0,
+				"lowerBound" : 0,
+				"name" : "Ignoriert",
+				"odd" : false,
+				"upperBound" : 0
+			}
+		},
+		{
+			"input" : "previous",
+			"name" : "HSV Select",
+			"operation" : "_thresh_color",
+			"param1" : 
+			{
+				"default" : 0,
+				"lowerBound" : 0,
+				"name" : "untere Grenze",
+				"odd" : false,
+				"upperBound" : 360
+			},
+			"param2" : 
+			{
+				"default" : 70,
+				"lowerBound" : 0,
+				"name" : "obere Grenze",
+				"odd" : false,
+				"upperBound" : 360
+			}
+		},
+		{
+			"input" : "previous",
+			"name" : "Dilatiere",
+			"operation" : "_dilate",
+			"param1" : 
+			{
+				"default" : 11,
+				"lowerBound" : 1,
+				"name" : "Kernel Größe",
+				"odd" : true,
+				"upperBound" : 100
+			},
+			"param2" : 
+			{
+				"default" : 1,
+				"lowerBound" : 1,
+				"name" : "Iterationen",
+				"odd" : false,
+				"upperBound" : 50
+			}
+		},
+		{
+			"input" : "previous",
+			"name" : "Zurück zur Originalgröße",
+			"operation" : "_resizeToOriginal",
+			"param1" : 
+			{
+				"default" : 0,
+				"lowerBound" : 0,
+				"name" : "Ignoriert",
+				"odd" : false,
+				"upperBound" : 0
+			},
+			"param2" : 
+			{
+				"default" : 0,
+				"lowerBound" : 0,
+				"name" : "Ignoriert",
+				"odd" : false,
+				"upperBound" : 0
+			}
+		},
+		{
+			"input" : "previous",
+			"name" : "Grenzwert",
+			"operation" : "_threshold",
+			"param1" : 
+			{
+				"default" : 0,
+				"lowerBound" : 0,
+				"name" : "Ignoriert",
+				"odd" : false,
+				"upperBound" : 0
+			},
+			"param2" : 
+			{
+				"default" : 0,
+				"lowerBound" : 0,
+				"name" : "Ignoriert",
+				"odd" : false,
+				"upperBound" : 0
+			}
+		},
+		{
+			"input" : "previous",
+			"name" : "Markiere Hintergrund",
+			"operation" : "_markBackground",
+			"param1" : 
+			{
+				"default" : 0,
+				"lowerBound" : 0,
+				"name" : "Ignoriert",
+				"odd" : false,
+				"upperBound" : 0
+			},
+			"param2" : 
+			{
+				"default" : 0,
+				"lowerBound" : 0,
+				"name" : "Ignoriert",
+				"odd" : false,
+				"upperBound" : 0
+			}
+		},
+		{
+			"input" : "previous",
+			"name" : "Invertieren",
+			"operation" : "_invert_markers",
+			"param1" : 
+			{
+				"default" : 0,
+				"lowerBound" : 0,
+				"name" : "Ignoriert",
+				"odd" : false,
+				"upperBound" : 0
+			},
+			"param2" : 
+			{
+				"default" : 0,
+				"lowerBound" : 0,
+				"name" : "Ignoriert",
+				"odd" : false,
+				"upperBound" : 0
+			}
+		},
+		{
+			"input" : "previous",
+			"name" : "Erodieren",
+			"operation" : "_erode_intermediate",
+			"param1" : 
+			{
+				"default" : 11,
+				"lowerBound" : 1,
+				"name" : "Kernel Größe",
+				"odd" : true,
+				"upperBound" : 100
+			},
+			"param2" : 
+			{
+				"default" : 2,
+				"lowerBound" : 1,
+				"name" : "Iterationen",
+				"odd" : false,
+				"upperBound" : 50
+			}
+		},
+		{
+			"input" : "previous",
+			"name" : "Zurück zur Originalgröße",
+			"operation" : "_resizeToOriginal",
+			"param1" : 
+			{
+				"default" : 0,
+				"lowerBound" : 0,
+				"name" : "Ignoriert",
+				"odd" : false,
+				"upperBound" : 0
+			},
+			"param2" : 
+			{
+				"default" : 0,
+				"lowerBound" : 0,
+				"name" : "Ignoriert",
+				"odd" : false,
+				"upperBound" : 0
+			}
+		},
+		{
+			"input" : "previous",
+			"name" : "Grenzwert",
+			"operation" : "_threshold",
+			"param1" : 
+			{
+				"default" : 0,
+				"lowerBound" : 0,
+				"name" : "Ignoriert",
+				"odd" : false,
+				"upperBound" : 0
+			},
+			"param2" : 
+			{
+				"default" : 0,
+				"lowerBound" : 0,
+				"name" : "Ignoriert",
+				"odd" : false,
+				"upperBound" : 0
+			}
+		},
+		{
+			"input" : "previous",
+			"name" : "Wasserscheide",
+			"operation" : "_watershed",
+			"param1" : 
+			{
+				"default" : 0,
+				"lowerBound" : 0,
+				"name" : "Ignoriert",
+				"odd" : false,
+				"upperBound" : 0
+			},
+			"param2" : 
+			{
+				"default" : 0,
+				"lowerBound" : 0,
+				"name" : "Ignoriert",
+				"odd" : false,
+				"upperBound" : 0
+			}
+		}
+	],
+	"rating" : {
+       "steps" : 
+        [
+            {
+                "input" : "color",
+                "name" : "Grenzwert",
+                "operation" : "_threshold",
+                "param1" : 
+                {
+                    "default" : 0,
+                    "lowerBound" : 0,
+                    "name" : "Ignoriert",
+                    "odd" : false,
+                    "upperBound" : 0
+                },
+                "param2" : 
+                {
+                    "default" : 0,
+                    "lowerBound" : 0,
+                    "name" : "Ignoriert",
+                    "odd" : false,
+                    "upperBound" : 0
+                }
+            },
+            {
+                "input" : "previous",
+                "name" : "Durschnittlicher H-Wert",
+                "operation" : "_mean_color",
+                "param1" : 
+                {
+                    "default" : 0,
+                    "lowerBound" : 0,
+                    "name" : "Ignoriert",
+                    "odd" : false,
+                    "upperBound" : 0
+                },
+                "param2" : 
+                {
+                    "default" : 0,
+                    "lowerBound" : 0,
+                    "name" : "Ignoriert",
+                    "odd" : false,
+                    "upperBound" : 0
+                }
+            },
+            {
+                "input" : "color",
+                "name" : "Grenzwert",
+                "operation" : "_threshold",
+                "param1" : 
+                {
+                    "default" : 0,
+                    "lowerBound" : 0,
+                    "name" : "Ignoriert",
+                    "odd" : false,
+                    "upperBound" : 0
+                },
+                "param2" : 
+                {
+                    "default" : 0,
+                    "lowerBound" : 0,
+                    "name" : "Ignoriert",
+                    "odd" : false,
+                    "upperBound" : 0
+                }
+            },
+            {
+                "input" : "previous",
+                "name" : "Fit Ellipse",
+                "operation" : "_fit_ellipse",
+                "param1" : 
+                {
+                    "default" : 220,
+                    "lowerBound" : 1,
+                    "name" : "Pixel pro Zentimeter",
+                    "odd" : false,
+                    "upperBound" : 10000
+                },
+                "param2" : 
+                {
+                    "default" : 0,
+                    "lowerBound" : 0,
+                    "name" : "Ignoriert",
+                    "odd" : false,
+                    "upperBound" : 0
+                }
+            },
+            {
+                "input" : "color",
+                "name" : "Grenzwert nach Otsu",
+                "operation" : "_thresh_otsu",
+                "param1" : 
+                {
+                    "default" : 0,
+                    "lowerBound" : 0,
+                    "name" : "Ignoriert",
+                    "odd" : false,
+                    "upperBound" : 0
+                },
+                "param2" : 
+                {
+                    "default" : 0,
+                    "lowerBound" : 0,
+                    "name" : "Ignoriert",
+                    "odd" : false,
+                    "upperBound" : 0
+                }
+            },
+            {
+                "input" : "previous",
+                "name" : "Bewerte kleine Flecken",
+                "operation" : "_rate_spots",
+                "param1" : 
+                {
+                    "default" : 220,
+                    "lowerBound" : 1,
+                    "name" : "Pixel pro Zentimeter",
+                    "odd" : false,
+                    "upperBound" : 10000
+                },
+                "param2" : 
+                {
+                    "default" : 0,
+                    "lowerBound" : 0,
+                    "name" : "Ignoriert",
+                    "odd" : false,
+                    "upperBound" : 0
+                }
+            }
+        ],
+    "results" : 
+    [
+        "avg_h_val",
+        "size_diagonal",
+        "size_ratio",
+        "spot_avg_h_val",
+        "spot_avg_size"
+    ]
+    }
+}

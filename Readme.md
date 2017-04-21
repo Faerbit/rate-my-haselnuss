@@ -1,24 +1,24 @@
-#Rate my Haselnuss
+# Rate my Haselnuss
 Visually guess the taste of a hazelnut
 
-##Disclaimer
+## Disclaimer
 
 This program has been created as part of my image processing practical course
 at the FH Aachen. Therefore some parts of this are in german. If you're
 interested in this and have trouble understanding it, do not hesitate to
 contact me: I'll gladly translate it for you to english.
 
-##License
+## License
 
 This program is lincesed under MIT. See License.md for details.
 
-##Idee
+## Idee
 Dieses Programm versucht Haselnüsse visuell nach ihrem Geschmack zu
 klassifizieren, insbesondere die Erkennung der schlecht schmeckenden soll
 gelingen.
 
 
-##Technische Vorraussetzungen
+## Technische Vorraussetzungen
 Dieses Programm benutzt CMake und kann wie jedes andere CMake-Projekt
 kompiliert werden:
 ```
@@ -39,7 +39,7 @@ Folgende Libraries werden benötigt:
   [http://leenissen.dk/fann/wp/]())
 * JsonCPP [https://github.com/open-source-parsers/jsoncpp]()
 
-##Aufnahmebedingungen
+## Aufnahmebedingungen
 Aufnahmebedingungen für Eingabedaten:
 * Heller, einfarber Hintergrund mit einem H-Wert (im HSV-Farbraum) von über 70
 * Lockere Anordnung
@@ -52,7 +52,7 @@ angepasst wird. Die aktuelle Konfiguration ist allerdings nur unter diesen
 Bedingungen getestet.  Abweichende Bedingungen können schlechtere Ergebnisse
 liefern.
 
-##Bedienung
+## Bedienung
 Die Bedienung des Programmes sollte relativ selbsterklärend sein. Man läd ein
 Bild in die Applikation und erhält eine Klassifikation der Nüsse visuell
 angezeigt. Unter dem Konfigurationstab können die Erkennungs- und
